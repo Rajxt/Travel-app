@@ -4,36 +4,36 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                echo 'Cloning code from GitHub...'
+                echo 'Cloning Vue.js app from GitHub...'
                 checkout scm
             }
         }
         
         stage('Build Docker Image') {
             steps {
-                echo 'Building Docker image...'
+                echo 'Building Docker image for Vue.js app...'
                 script {
-                    // Build your app's Docker image
-                    sh 'docker build -t two-tier-app:latest .'
+                    sh 'docker build -t vue-vite-app:latest .'
                 }
             }
         }
         
         stage('Stop Old Container') {
             steps {
-                echo 'Stopping old container if running...'
+                echo 'Stopping old container...'
                 script {
-                    sh 'docker stop two-tier-app || true'
-                    sh 'docker rm two-tier-app || true'
+                    sh 'docker stop vue-app || true'
+                    sh 'docker rm vue-app || true'
                 }
             }
         }
         
         stage('Run New Container') {
             steps {
-                echo 'Running new container...'
+                echo 'Running new Vue.js container...'
                 script {
-                    sh 'docker run -d --name two-tier-app -p 80:80 two-tier-app:latest'
+                    // Run on port 80 (or 8080 if you prefer)
+                    sh 'docker run -d --name vue-app -p 80:80 vue-vite-app:latest'
                 }
             }
         }
@@ -41,17 +41,20 @@ pipeline {
         stage('Verify Deployment') {
             steps {
                 echo 'Checking if container is running...'
-                sh 'docker ps | grep two-tier-app'
+                sh 'docker ps | grep vue-app'
+                sh 'sleep 5'
+                sh 'curl -f http://localhost:80 || exit 1'
             }
         }
     }
     
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo '✅ Vue.js app deployed successfully!'
         }
         failure {
-            echo 'Pipeline failed!'
+            echo '❌ Deployment failed!'
+            sh 'docker logs vue-app || true'
         }
     }
 }
