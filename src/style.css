@@ -1,0 +1,14 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white; /* Adding white text color for better readability */
+}
+
+/* Optional: Make all components inherit the black background by default */
+#app {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}

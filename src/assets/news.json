@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "user": {
+        "name": "John Doe",
+        "profilePic": "/assets/images/profile1.jpg",
+        "location": "Paris, France"
+      },
+      "title": "Exploring the Eiffel Tower",
+      "content": "Had an amazing time visiting the Eiffel Tower! The view from the top is breathtaking, and the architecture is stunning. Highly recommend it to anyone visiting Paris!",
+      "date": "2025-05-01",
+      "category": "Travel",
+      "likes": 120,
+      "comments": [
+        {
+          "user": "Jane Smith",
+          "comment": "I visited last year! It’s such an iconic landmark.",
+          "date": "2025-05-02"
+        },
+        {
+          "user": "Carlos Mendez",
+          "comment": "Definitely on my bucket list! Looks amazing.",
+          "date": "2025-05-03"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "Emily Clark",
+        "profilePic": "/assets/images/profile2.jpg",
+        "location": "Kyoto, Japan"
+      },
+      "title": "A Day in Kyoto's Temples",
+      "content": "Spent an entire day exploring the beautiful temples of Kyoto. Fushimi Inari-taisha was definitely the highlight of my trip. The thousands of red torii gates were magical!",
+      "date": "2025-04-28",
+      "category": "Cultural Exploration",
+      "likes": 85,
+      "comments": [
+        {
+          "user": "Michael Brown",
+          "comment": "Kyoto is my favorite city in Japan! Such rich culture.",
+          "date": "2025-04-29"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user": {
+        "name": "Sophia Williams",
+        "profilePic": "/assets/images/profile3.jpg",
+        "location": "New York, USA"
+      },
+      "title": "Walking through Central Park",
+      "content": "Central Park in New York City is a must-see! Whether you’re walking, biking, or just sitting by the lake, it’s the perfect escape from the city hustle. Loved it!",
+      "date": "2025-04-25",
+      "category": "Urban Exploration",
+      "likes": 92,
+      "comments": [
+        {
+          "user": "David Lee",
+          "comment": "Such a beautiful park. I visited in the fall and the colors were incredible!",
+          "date": "2025-04-26"
+        },
+        {
+          "user": "Olivia Taylor",
+          "comment": "Can't wait to go there. It's on my list for next summer!",
+          "date": "2025-04-27"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "user": {
+        "name": "Mark Johnson",
+        "profilePic": "/assets/images/profile4.jpg",
+        "location": "Sydney, Australia"
+      },
+      "title": "Bondi Beach Sunrise",
+      "content": "Woke up early to watch the sunrise at Bondi Beach. It was absolutely worth it. The colors of the sky as the sun rose were magical. I recommend this experience to everyone visiting Sydney.",
+      "date": "2025-04-15",
+      "category": "Beach & Nature",
+      "likes": 105,
+      "comments": [
+        {
+          "user": "Lucas King",
+          "comment": "Bondi Beach is always beautiful. I hope to catch a sunrise next time.",
+          "date": "2025-04-16"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "user": {
+        "name": "Ava Martin",
+        "profilePic": "/assets/images/profile5.jpg",
+        "location": "Rome, Italy"
+      },
+      "title": "Tasting Pasta in Rome",
+      "content": "Had the most delicious pasta in Rome at a small trattoria. The flavors were so fresh and authentic! It’s a food lover’s paradise here.",
+      "date": "2025-04-10",
+      "category": "Food & Culture",
+      "likes": 78,
+      "comments": [
+        {
+          "user": "Henry Adams",
+          "comment": "Italian food is unbeatable. I can taste it just reading this!",
+          "date": "2025-04-11"
+        }
+      ]
+    }
+  ]
+  
